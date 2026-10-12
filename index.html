@@ -4,236 +4,338 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Global Academy — Dashboard</title>
-  <style>
-    body { background-color: #eef2ff; color: #1f2340; }
-    a { color: #1e3a8a; }
-
-    header { background-color: #ffffff; color: #1e3a8a; }
-
-    nav { background-color: #1e3a8a; }
-    nav a { color: #ffffff; }
-    nav li:first-child a { color: #ffb020; }
-
-    aside { background-color: #ffffff; }
-    aside h2 { background-color: #1e3a8a; color: #ffffff; }
-    aside a { color: #1f2340; }
-    aside li.resaltado { background-color: #fef3c7; }
-
-    section { background-color: #ffffff; }
-    h2.titulo-teal { background-color: #3b5bdb; color: #eef2ff; }
-    h2.titulo-naranja { background-color: #ffb020; color: #1e3a8a; }
-
-    figcaption { background-color: #1e3a8a; color: #ffffff; }
-
-    table { background-color: #f5f7ff; border-color: #3b4a9c; }
-    th { background-color: #1e3a8a; color: #ffffff; }
-    td { border-color: #3b4a9c; }
-    td.amarillo { background-color: #fff176; }
-    td.celeste { background-color: #b3e5fc; }
-    td.gris { background-color: #e5e7eb; }
-
-    article { background-color: #ffffff; border-color: #3b4a9c; }
-
-    input, select, textarea { border: 1px solid #3b4a9c; background-color: #ffffff; }
-    select { background-color: #f5f7ff; }
-    button[type="submit"] { background-color: #ffb020; color: #1f2340; border: none; }
-
-    footer { background-color: #1e3a8a; color: #ffffff; }
-    footer a { color: #ffffff; }
-  </style>
 </head>
-<body>
+<body bgcolor="#eef2ff" text="#1f2340" link="#1e3a8a" vlink="#1e3a8a" leftmargin="0" topmargin="0">
 
+  <!-- HEADER: logo, search, icons and user -->
   <header>
-    <a href="index.html">
-      <img src="img/logo.png" alt="Global Academy logo">
-      <strong>GLOBAL ACADEMY</strong>
-    </a>
-
-    <form role="search" action="#">
-      <input type="search" name="q" placeholder="Search..." aria-label="Search">
-    </form>
-
-    <button type="button">Apps</button>
-    <a href="#">Notifications</a>
-    <a href="#">
-      <img src="img/avatar.png" alt="User avatar">
-    </a>
+    <table width="100%" bgcolor="#ffffff" cellpadding="10" cellspacing="0" border="0">
+      <tr>
+        <td width="25%">
+          <a href="index.html">
+            <img src="img/logo.png" alt="Global Academy logo" height="40">
+            <font color="#1e3a8a"><strong>GLOBAL ACADEMY</strong></font>
+          </a>
+        </td>
+        <td width="45%" align="center">
+          <form role="search" action="#">
+            <input type="search" name="q" size="40" placeholder="Search..." aria-label="Search">
+          </form>
+        </td>
+        <td width="30%" align="right">
+          <a href="#">Apps</a> |
+          <a href="#">Notifications</a> |
+          <a href="#"><img src="img/avatar.png" alt="User avatar" height="30"></a>
+        </td>
+      </tr>
+    </table>
   </header>
 
+  <!-- MAIN NAVIGATION -->
   <nav aria-label="Main navigation">
-    <ul>
-      <li><a href="index.html">DASHBOARD</a></li>
-      <li><a href="#">MY COURSES</a></li>
-      <li><a href="#">RESOURCES</a></li>
-      <li><a href="#">COMMUNITY</a></li>
-      <li><a href="#">HELP</a></li>
-    </ul>
+    <table width="100%" bgcolor="#1e3a8a" cellpadding="10" cellspacing="0" border="0">
+      <tr>
+        <td width="20%" align="center" bgcolor="#14296b"><a href="index.html"><font color="#ffb020">DASHBOARD</font></a></td>
+        <td width="20%" align="center"><a href="#"><font color="#ffffff">MY COURSES</font></a></td>
+        <td width="20%" align="center"><a href="#"><font color="#ffffff">RESOURCES</font></a></td>
+        <td width="20%" align="center"><a href="#"><font color="#ffffff">COMMUNITY</font></a></td>
+        <td width="20%" align="center"><a href="#"><font color="#ffffff">HELP</font></a></td>
+      </tr>
+    </table>
   </nav>
 
-  <aside>
-    <h2>QUICK ACCESS</h2>
-    <ul>
-      <li><a href="#">Announcements</a></li>
-      <li class="resaltado"><a href="#">Calendar Events</a></li>
-      <li><a href="#">Grades</a></li>
-      <li><a href="#">Faculty Directory</a></li>
-    </ul>
-  </aside>
+  <!-- BODY: sidebar on the left, content on the right -->
+  <table width="100%" cellpadding="10" cellspacing="0" border="0">
+    <tr>
 
-  <main>
-    <section>
-      <h2 class="titulo-teal">LEARNING HUB</h2>
-      <figure>
-        <img src="img/welcome.jpg" alt="Student smiling while using a laptop">
-        <figcaption>
-          <h3>WELCOME BACK</h3>
-          <p>Join your peers at Global Academy, find your motivation and get into your community.</p>
-        </figcaption>
-      </figure>
-    </section>
-    <section>
-      <h2 class="titulo-naranja">COURSE SCHEDULE</h2>
-      <table border="1">
-        <thead>
-          <tr>
-            <th>Module</th>
-            <th>Topic</th>
-            <th>Instructor</th>
-            <th>Date</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td rowspan="3">Module 1</td>
-            <td><ul><li>Learning &amp; Profession Courses</li></ul></td>
-            <td>John B.B.</td>
-            <td>8/12/2024</td>
-            <td class="amarillo">Complete</td>
-          </tr>
-          <tr>
-            <td><ul><li>Exploratory Learning</li></ul></td>
-            <td>Berni Mant</td>
-            <td>3/11/2024</td>
-            <td class="amarillo">Complete</td>
-          </tr>
-          <tr>
-            <td><ul><li>Summary Learning</li></ul></td>
-            <td>Jim F.</td>
-            <td>1/12/2024</td>
-            <td class="amarillo">Complete</td>
-          </tr>
+      <!-- SIDEBAR: quick access -->
+      <td width="190" valign="top">
+        <aside>
+          <table width="100%" bgcolor="#ffffff" border="1" bordercolor="#3b4a9c" cellpadding="8" cellspacing="0">
+            <tr>
+              <td bgcolor="#1e3a8a" align="center">
+                <h2><font color="#ffffff">QUICK ACCESS</font></h2>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#eef2ff"><a href="#">Announcements</a></td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#fef3c7"><a href="#">Calendar Events</a></td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#eef2ff"><a href="#">Grades</a></td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#eef2ff"><a href="#">Faculty Directory</a></td>
+            </tr>
+          </table>
+        </aside>
+      </td>
 
-          <tr>
-            <td rowspan="2">Module 2</td>
-            <td><ul><li>Student Schedule</li></ul></td>
-            <td>Geman S.</td>
-            <td>8/12/2024</td>
-            <td class="celeste">Success</td>
-          </tr>
-          <tr>
-            <td><ul><li>Developmental Learning</li></ul></td>
-            <td>Flaschhster</td>
-            <td>0/12/2024</td>
-            <td class="celeste">Success</td>
-          </tr>
-          <tr>
-            <td rowspan="2"></td>
-            <td><ul><li>Social Learning Designs &amp; Communities</li></ul></td>
-            <td>Mariv W.</td>
-            <td>8/12/2024</td>
-            <td class="gris">Plan</td>
-          </tr>
-          <tr>
-            <td><ul><li>Summary Schedule</li></ul></td>
-            <td>Jims A.</td>
-            <td>0/13/2024</td>
-            <td class="gris">Plan</td>
-          </tr>
+      <!-- MAIN CONTENT -->
+      <td valign="top">
+        <main>
 
-          <tr>
-            <td rowspan="3">Module 3</td>
-            <td><ul><li>Student Learning</li></ul></td>
-            <td>Marw M.</td>
-            <td>9/12/2024</td>
-            <td class="amarillo">Complete</td>
-          </tr>
-          <tr>
-            <td><ul><li>Complete Learning</li></ul></td>
-            <td>Geman S.</td>
-            <td>0/12/2024</td>
-            <td class="celeste">Success</td>
-          </tr>
-          <tr>
-            <td><ul><li>Developmental Learning</li></ul></td>
-            <td>Flaschhster</td>
-            <td>9/13/2024</td>
-            <td class="celeste">Success</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <section>
-      <h2 class="titulo-naranja">RECOMMENDED READING</h2>
+          <!-- LEARNING HUB: welcome message -->
+          <section>
+            <table width="100%" bgcolor="#ffffff" border="1" bordercolor="#3b4a9c" cellpadding="8" cellspacing="0">
+              <tr>
+                <td bgcolor="#3b5bdb">
+                  <h2><font color="#eef2ff">LEARNING HUB</font></h2>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" height="140" bgcolor="#27408f" background="img/welcome.jpg">
+                  <figure>
+                    <figcaption>
+                      <h3><font color="#ffffff">WELCOME BACK</font></h3>
+                      <p><font color="#ffffff">Join your peers at Global Academy, find your motivation and get into your community.</font></p>
+                    </figcaption>
+                  </figure>
+                </td>
+              </tr>
+            </table>
+          </section>
 
-      <article>
-        <img src="img/articulo1.jpg" alt="Students studying together">
-        <h3>Recommended Articles</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Immonocant dis toars and mendal wisinta nulalerating contept.</p>
-      </article>
+          <br>
 
-      <article>
-        <img src="img/articulo2.jpg" alt="Hands working on a laptop">
-        <h3>Fast Learning Articles</h3>
-        <p>Foiloilengistiqmiler commants authnienitaries and inscium personaded oraids, saic at compandus card the-tingruml.</p>
-      </article>
+          <!-- SCHEDULE (left) and RECOMMENDED READING (right) -->
+          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
 
-      <article>
-        <img src="img/articulo3.jpg" alt="Student writing at a desk">
-        <h3>Recommended Articles</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur senior anicultural artich comver an exinecate fert menting portiones.</p>
-      </article>
-    </section>
-    <section>
-      <h2 class="titulo-teal">FEEDBACK &amp; SUPPORT</h2>
+              <!-- COURSE SCHEDULE: module table -->
+              <td width="62%" valign="top">
+                <section>
+                  <table width="100%" bgcolor="#ffffff" border="1" bordercolor="#3b4a9c" cellpadding="8" cellspacing="0">
+                    <tr>
+                      <td bgcolor="#ffb020">
+                        <h2><font color="#1e3a8a">COURSE SCHEDULE</font></h2>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table width="100%" border="1" bordercolor="#3b4a9c" bgcolor="#f5f7ff" cellpadding="5" cellspacing="0">
+                          <thead>
+                            <tr bgcolor="#1e3a8a">
+                              <th><font color="#ffffff">Module</font></th>
+                              <th><font color="#ffffff">Topic</font></th>
+                              <th><font color="#ffffff">Instructor</font></th>
+                              <th><font color="#ffffff">Date</font></th>
+                              <th><font color="#ffffff">Status</font></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td rowspan="3">Module 1</td>
+                              <td><ul><li>Learning &amp; Profession Courses</li></ul></td>
+                              <td>John B.B.</td>
+                              <td>8/12/2024</td>
+                              <td bgcolor="#fff176">Complete</td>
+                            </tr>
+                            <tr>
+                              <td><ul><li>Exploratory Learning</li></ul></td>
+                              <td>Berni Mant</td>
+                              <td>3/11/2024</td>
+                              <td bgcolor="#fff176">Complete</td>
+                            </tr>
+                            <tr>
+                              <td><ul><li>Summary Learning</li></ul></td>
+                              <td>Jim F.</td>
+                              <td>1/12/2024</td>
+                              <td bgcolor="#fff176">Complete</td>
+                            </tr>
 
-      <form action="#" method="post">
-        <p>
-          <label for="subject">Subject</label><br>
-          <input type="text" id="subject" name="subject" required minlength="3" maxlength="100" autocomplete="off">
-        </p>
+                            <tr>
+                              <td rowspan="2">Module 2</td>
+                              <td><ul><li>Student Schedule</li></ul></td>
+                              <td>Geman S.</td>
+                              <td>8/12/2024</td>
+                              <td bgcolor="#b3e5fc">Success</td>
+                            </tr>
+                            <tr>
+                              <td><ul><li>Developmental Learning</li></ul></td>
+                              <td>Flaschhster</td>
+                              <td>0/12/2024</td>
+                              <td bgcolor="#b3e5fc">Success</td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2"></td>
+                              <td><ul><li>Social Learning Designs &amp; Communities</li></ul></td>
+                              <td>Mariv W.</td>
+                              <td>8/12/2024</td>
+                              <td bgcolor="#e5e7eb">Plan</td>
+                            </tr>
+                            <tr>
+                              <td><ul><li>Summary Schedule</li></ul></td>
+                              <td>Jims A.</td>
+                              <td>0/13/2024</td>
+                              <td bgcolor="#e5e7eb">Plan</td>
+                            </tr>
 
-        <p>
-          <label for="category">Category</label><br>
-          <select id="category" name="category" required>
-            <option value="" selected disabled>Select Category</option>
-            <option value="comment">Comment</option>
-            <option value="inquiry">Inquiry</option>
-            <option value="technical-support">Technical Support</option>
-            <option value="grades">Grades</option>
-            <option value="other">Other</option>
-          </select>
-        </p>
+                            <tr>
+                              <td rowspan="3">Module 3</td>
+                              <td><ul><li>Student Learning</li></ul></td>
+                              <td>Marw M.</td>
+                              <td>9/12/2024</td>
+                              <td bgcolor="#fff176">Complete</td>
+                            </tr>
+                            <tr>
+                              <td><ul><li>Complete Learning</li></ul></td>
+                              <td>Geman S.</td>
+                              <td>0/12/2024</td>
+                              <td bgcolor="#b3e5fc">Success</td>
+                            </tr>
+                            <tr>
+                              <td><ul><li>Developmental Learning</li></ul></td>
+                              <td>Flaschhster</td>
+                              <td>9/13/2024</td>
+                              <td bgcolor="#b3e5fc">Success</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </section>
+              </td>
 
-        <p>
-          <label for="message">Your Message</label><br>
-          <textarea id="message" name="message" rows="5" cols="50" required minlength="10" maxlength="1000"></textarea>
-        </p>
+              <td width="2%">&nbsp;</td>
 
-        <button type="submit">Send</button>
-      </form>
-    </section>
+              <!-- RECOMMENDED READING: suggested articles -->
+              <td width="36%" valign="top">
+                <section>
+                  <table width="100%" bgcolor="#ffffff" border="1" bordercolor="#3b4a9c" cellpadding="8" cellspacing="0">
+                    <tr>
+                      <td bgcolor="#ffb020">
+                        <h2><font color="#1e3a8a">RECOMMENDED READING</font></h2>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
 
-  </main>
+                        <article>
+                          <table width="100%" border="1" bordercolor="#3b4a9c" cellpadding="6" cellspacing="0">
+                            <tr>
+                              <td width="50" valign="top"><img src="img/articulo1.jpg" alt="Students studying together" width="50"></td>
+                              <td valign="top">
+                                <h3>Recommended Articles</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Immonocant dis toars and mendal wisinta nulalerating contept.</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </article>
+                        <br>
+
+                        <article>
+                          <table width="100%" border="1" bordercolor="#3b4a9c" cellpadding="6" cellspacing="0">
+                            <tr>
+                              <td width="50" valign="top"><img src="img/articulo2.jpg" alt="Hands working on a laptop" width="50"></td>
+                              <td valign="top">
+                                <h3>Fast Learning Articles</h3>
+                                <p>Foiloilengistiqmiler commants authnienitaries and inscium personaded oraids, saic at compandus card the-tingruml.</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </article>
+                        <br>
+
+                        <article>
+                          <table width="100%" border="1" bordercolor="#3b4a9c" cellpadding="6" cellspacing="0">
+                            <tr>
+                              <td width="50" valign="top"><img src="img/articulo3.jpg" alt="Student writing at a desk" width="50"></td>
+                              <td valign="top">
+                                <h3>Recommended Articles</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur senior anicultural artich comver an exinecate fert menting portiones.</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </article>
+
+                      </td>
+                    </tr>
+                  </table>
+                </section>
+              </td>
+
+            </tr>
+          </table>
+
+          <br>
+
+          <!-- FEEDBACK & SUPPORT: form -->
+          <section>
+            <table width="100%" bgcolor="#ffffff" border="1" bordercolor="#3b4a9c" cellpadding="8" cellspacing="0">
+              <tr>
+                <td bgcolor="#3b5bdb">
+                  <h2><font color="#eef2ff">FEEDBACK &amp; SUPPORT</font></h2>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <form action="#" method="post">
+                    <table width="100%" cellpadding="6" cellspacing="0" border="0">
+                      <tr>
+                        <td width="50%" valign="top">
+                          <label for="subject"><strong>Subject</strong></label><br>
+                          <input type="text" id="subject" name="subject" size="40" required minlength="3" maxlength="100" autocomplete="off">
+                        </td>
+                        <td width="50%" valign="top">
+                          <label for="category"><strong>Category</strong></label><br>
+                          <select id="category" name="category" required>
+                            <option value="" selected disabled>Select Category</option>
+                            <option value="comment">Comment</option>
+                            <option value="inquiry">Inquiry</option>
+                            <option value="technical-support">Technical Support</option>
+                            <option value="grades">Grades</option>
+                            <option value="other">Other</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <label for="message"><strong>Your Message</strong></label><br>
+                          <textarea id="message" name="message" rows="5" cols="80" required minlength="10" maxlength="1000"></textarea>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <table cellpadding="4" cellspacing="0" border="0">
+                            <tr>
+                              <td bgcolor="#ffb020"><button type="submit">Send</button></td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </form>
+                </td>
+              </tr>
+            </table>
+          </section>
+
+        </main>
+      </td>
+    </tr>
+  </table>
+
+  <!-- FOOTER -->
   <footer>
-    <nav aria-label="Footer">
-      <a href="#">About Us</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Use</a>
-      <a href="#">Contact</a>
-    </nav>
-    <p>&copy; 2024 GLOBAL ACADEMY</p>
+    <table width="100%" bgcolor="#1e3a8a" cellpadding="14" cellspacing="0" border="0">
+      <tr>
+        <td align="left">
+          <nav aria-label="Footer">
+            <a href="#"><font color="#ffffff">About Us</font></a> &nbsp;&nbsp;
+            <a href="#"><font color="#ffffff">Privacy Policy</font></a> &nbsp;&nbsp;
+            <a href="#"><font color="#ffffff">Terms of Use</font></a> &nbsp;&nbsp;
+            <a href="#"><font color="#ffffff">Contact</font></a>
+          </nav>
+        </td>
+        <td align="right">
+          <font color="#ffffff">&copy; 2024 GLOBAL ACADEMY</font>
+        </td>
+      </tr>
+    </table>
   </footer>
 
 </body>
